@@ -67,7 +67,7 @@ function printColoredLines(content, wordCount) {
                 const count = wordCount[word.toLowerCase()] || 0;
                 return colorWord(word, count);
             })
-            .join(' ') + ' '; // <-- REQUIRED trailing space
+            .join(' ');
 
         console.log(coloredLine);
     }
@@ -97,3 +97,4 @@ module.exports = {
     printColoredLines,
     processFile
 };
+
