@@ -73,6 +73,7 @@ function printColoredLines(content, wordCount) {
     }
 }
 
+
 /**
  * Main function to read the file, count the word occurrences and print the colored lines.
  */
