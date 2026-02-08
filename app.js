@@ -67,11 +67,12 @@ function printColoredLines(content, wordCount) {
                 const count = wordCount[word.toLowerCase()] || 0;
                 return colorWord(word, count);
             })
-            .join(' ');
+            .join(' ') + ' '; // <-- REQUIRED trailing space
 
         console.log(coloredLine);
     }
 }
+
 
 /**
  * Main function to read the file, count the word occurrences and print the colored lines.
